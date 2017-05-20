@@ -2,6 +2,8 @@
 
 ###### Deep Forest, Sentiment Analysis, Text Mining
 
+In this project, a new proposed classification algorithms, [Deep Forest](https://arxiv.org/pdf/1702.08835.pdf), was combined with text mining technique to predict the price trend in financial market. Specifically, the project was involved with some tech methods, incl. crawling news data into database, training corpus of given text bag, performing sentiment analysis, and machine learning model training & predicting. Obtained sentiment data and some technical indicators were assembled to predict the price trend. Out-of-sample test achieved an accuracy of 62.8%.
+
 ### forcasting outcome:
 
 Slicing Sequence...
