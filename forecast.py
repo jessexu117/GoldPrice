@@ -32,8 +32,6 @@ price_file_name = 'AUTD_hist_data_'+start_date+'_'+end_date+'.csv'
 path = os.path.abspath(os.path.dirname(__file__))
 price_data_path = os.path.join(path+'/data/', price_file_name)
 
-# colume_names = ['contract','open','high','low','close','chg','chgRate','average','volume','turnover']
-
 df_price = pd.DataFrame.from_csv(price_data_path, sep='\t')
 
 db_file_name = 'goldNews.db'  # SQLite 数据库名称，路径为当前目录
@@ -95,7 +93,6 @@ pred_X = gcf.predict(X_te)
 
 # 保存每一天预测的结果，如果某天预测对了，保存1，如果某天预测错了，保存-1
 result_list = []
-
 
 # 检查预测是否成功
 def checkPredict(i):
